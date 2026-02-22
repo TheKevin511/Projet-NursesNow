@@ -5,6 +5,9 @@
     list-style:none ;
     text-decoration: none;
 }
+html{
+    scrool-behavior: smooth;
+}
 
 body{
     font-family: poppins;
@@ -362,4 +365,5 @@ footer .footer-top{
 }
 .liens-legaux a:hover{
     color: black;
+
 }
