@@ -57,7 +57,7 @@ header .logo-et-nav{
     display: flex;
     justify-content: space-between;
     align-items: center; /* Pour mettre login et le button sur la même ligne*/
-    min-width:15%;
+    width:25%;
 }
 .login-and-started .login{
     color:black;
@@ -330,7 +330,7 @@ footer .footer-top{
 /* Colonne 4 :Le boutton search jobs et les liens réseaux sociaux */
 .colonne4{
     display: grid;
-    min-width: 30%;   /*Augmenter la largeur du bloc*/
+    width: 35%;   /*Augmenter la largeur du bloc*/
     height: 100px;
     position: relative;  /*Pour pourvoir déplacer le bloc*/
     top: 10px;  /*Faire descendre le bloc de 10px*/
@@ -366,6 +366,7 @@ footer .footer-top{
     color: black;
 
 }
+
 
 
 
