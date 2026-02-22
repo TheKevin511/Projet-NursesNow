@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style:none ;
+    text-decoration: none;
+}
+
+body{
+    font-family: poppins;
+    animation: body 1s ease-in-out;
+}
+@keyframes body{
+    from{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 5%;
+}
+header .logo-et-nav{ 
+    display: flex;   /*Aligner le logo et la nav*/
+    gap: 10%;
+    justify-content: center;
+    align-items: center; 
+    width: 50%;
+}
+.logo-et-nav nav ul li{
+    display: inline-block;  /*Aligner les élément de nav*/
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.logo-et-nav nav ul li a{
+    color: black;    /*Couleur des liens de nav*/
+    transition: 0.3s;
+}
+.logo-et-nav nav ul li a:hover , .logo-et-nav nav ul li:hover{
+    color: #7327d1;
+    cursor: pointer;
+}
+/* lien connexion de login du header */
+.login-and-started{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Pour mettre login et le button sur la même ligne*/
+    width:15%;
+}
+.login-and-started .login{
+    color:black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.login-and-started .login:hover{
+    color: #7327d1;
+}
+
+/* Button Get started */
+.login-and-started .btn-started {
+    font-weight: 500;
+    color: white;
+    background-color: #7327d1;
+    border-radius: 7px;
+    padding: 4%;
+    transition: 0.3s;
+}
+.login-and-started .btn-started:hover{
+    box-shadow: 0px 0px 10px #7327d1;
+}
+
+
+/* Main */
+
+/* Section-Hero */
+main .section-hero{
+    background-image: url(photos/image-hero.png);  /*L'image d'arriere plan de lasection Hero*/
+    height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    margin-bottom: 5%; 
+}
+.texte-hero{
+    display: grid;
+    height: 70%;
+    width:35%;
+}
+.texte-hero h1 , h2{
+    color: #7327d1;
+}
+.label{  /*tous les labels qui sont avant les titres des sections*/
+    color: #00C2CB;
+    font-weight: 500;
+}
+.texte-hero .span-h1{  /*Le mot "The One!" dans le titre principal*/
+    color: #00C2CB;
+}
+
+/* Button app store et playstore */
+.download-app img{
+    border-radius: 10px;
+}
+
+/* La section fonctionalité */
+.section-fonctionalite{
+    display: grid;
+    min-height: 300px;
+    margin-bottom: 5%;
+}
+.section-fonctionalite .titre-fonct{
+    text-align: center;   /*Centrer le titre de la section*/
+    margin-bottom: 4%;
+}
+.section-fonctionalite .cartes-fonct{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.cartes-fonct .carte{  /*Style à l'interieur des cartes*/
+    display: grid;
+    gap: 50px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 23%;
+    padding: 3%;
+}
+/* Couleur de chaque cartes */
+.one{
+    background-color: rgba(116, 193, 252, 0.2)
+}
+.two{
+    background-color:rgb(99, 230, 190,0.2) ;
+}
+.three{
+    background-color: rgb(77, 49, 218,0.2);
+}
+
+/* La section recrutement */
+.section-recrutement{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    height: 400px;
+    margin-bottom: 5%;
+}
+.section-recrutement .formulaire{
+    width: 45%;
+    padding-top: 3%;   /*Faire descendre un peu le bloc de texte*/
+}
+
+/* Le champ de saisie du formulaire */
+.formulaire .form input[type="tel"]{
+    font-family: poppins;
+    font-weight: 500;
+    background-color: #7427d11f;
+    color: #7327d1;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+    padding: 2%;
+    outline:none; /*Supprimer la bordure auto... noir du champ*/
+}
+.formulaire .form input[type="tel"]:focus{
+    border: 2px solid #7427d1;  /*Changer la couleur des bordures du champ*/
+}
+.formulaire .form input::placeholder{  /*Changer la couleur du placeholder*/
+    color: #7327d1;
+}
+
+/* button du formulaire */
+.form button{
+    font-family: poppins;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: #7327d1;
+    border-radius: 7px;
+    padding: 1.5%;
+    margin-left: 20px;
+    width: 100px;
+    transition: 0.3s;   
+    cursor: pointer;
+}
+.form button:hover{  /*Au survol du bouton*/
+    box-shadow: 0px 0px 6px #7327d1;
+    transform: scale(1.02);  /*Un petit zoom sur le boutton*/
+}
+
+/* section-facilities */
+.section-facilities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 0 7% 8%;  /*Appliquer à gauche de 8% pour coincer des élément à droite*/
+    overflow: hidden; /*Cacher tous les éléments de la section qui sont en dehors de section*/
+}
+.section-facilities .texte-facilities{
+    width: 40%;
+}
+.texte-facilities{   /*Les textes de la section fatalities*/
+    display: grid;   
+    gap: 20px;     /*espacement vertical entre les div*/
+}
+.texte-facilities a{
+    font-weight: bold;
+    color: white;
+    background-color: #7327d1;
+    border-radius: 7px;
+    padding: 1.5% 3%;
+    transition: 0.3s;   
+    cursor: pointer;
+}
+.texte-facilities a:hover{
+    box-shadow: 0px 0px 6px #7327d1;
+}
+
+.image-facilities .infirmiere{  /* déplacer l'image de l'infirmière*/
+    border-radius: 50%;
+    position: relative;
+    right: 17%;
+    top: 80px;
+}
+
+/* Section  jobs */
+.section-jobs{
+    display: flex;
+    align-items: center;
+    gap: 7%;
+    padding: 0 7%;
+    height: 350px;
+    margin-bottom: 5%;
+}
+/* Contenu textuel de la section job */
+.texte-jobs{
+    display: grid;
+    height: 90%;  /*augmenter le hauteur de la boite du contenu textuel*/
+}
+.texte-jobs ul li{
+    line-height: 40px; /*Espace entre les element de la liste*/
+}
+/* La liste dans texte-jobs */
+.texte-jobs ul li::before{
+    content: "*"; /*Ajouter des étoiles avant les éléments de la liste*/
+    color: #00C2CB;
+    font-weight: 900;
+}
+
+.texte-jobs a{
+    font-family: poppins;
+    font-weight: bold;
+    color: white;
+    background-color: #7327d1;
+    border-radius: 7px;
+    padding: 3% 7%;
+    transition: 0.3s;   
+    cursor: pointer;   
+}
+.texte-jobs a:hover{
+    box-shadow: 0px 0px 6px #7327d1;
+}
+
+/* La section de téléchargement del'application */
+.telechargement{
+    background:linear-gradient(#7427d190) ,url(photos/background-telechargement.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+}
+
+.telechargement .titre-telch{
+    color:white;
+    margin-bottom: 25px;
+}
+
+/* L'imae de l'appli à droite */
+.image-app{
+    position: relative;
+    top: 6px; /*Juste faire descendre un peu l'image*/
+}
+
+/* Footer */
+footer{
+    height: 300px;
+    margin-top: 4%; 
+    font-size: 15px;
+    padding: 2% 4% 0 4%;
+}
+footer .footer-top{
+    display: flex;
+    gap: 10%;
+    padding-bottom: 5%;
+}
+.colonne1 .email span a{ /* l'adresse mail*/ 
+    color: black;
+    font-weight: bold;
+}
+
+/*Colonne 2 et 3 : les deux listes*/
+.footer-top .colonne2 , .colonne3{
+    width: 25%;  
+}
+
+.liste li{  /* les deux listes complete*/ 
+    line-height:40px;
+    font-weight: 600;
+}
+.liste .en-tete{   /*Les en-tête Général et Support*/
+    color: #7327d1;
+}
+.liste li a{
+    color: black;
+}
+
+/* Colonne 4 :Le boutton search jobs et les liens réseaux sociaux */
+.colonne4{
+    display: grid;
+    width: 30%;   /*Augmenter la largeur du bloc*/
+    height: 100px;
+    position: relative;  /*Pour pourvoir déplacer le bloc*/
+    top: 10px;  /*Faire descendre le bloc de 10px*/
+}
+.colonne4 .btn-footer a{
+    font-weight: bold;
+    color: white;
+    background-color: #7327d1;
+    border-radius: 7px;
+    padding: 4% 7%;
+    transition: 0.3s;   
+    cursor: pointer;
+}
+.colonne4 .btn-footer a:hover{
+    box-shadow: 0px 0px 6px #7327d1;
+}
+
+/* Les confidentialités */
+.footer-confidentialite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    color: gray;
+    font-weight: 500;
+}
+
+/* Les trois liens de confidentialité */
+.footer-confidentialite .liens-legaux a{
+    color: gray;
+}
+.liens-legaux a:hover{
+    color: black;
+}
